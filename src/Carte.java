@@ -2,8 +2,8 @@ import java.util.Objects;
 
 public class Carte implements Comparable {
 
-    private static final String [] cardColor = {"Pique", "Coeur", "Carreau", "Trèfle"};
-    private static final int [] cardValue = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+    static final String [] cardColor = {"Pique", "Coeur", "Carreau", "Trèfle"};
+    private static final int [] cardValue = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
     private final String color;
     private final int value;
@@ -34,7 +34,7 @@ public class Carte implements Comparable {
 
     public String textValue() {
         switch (value) {
-            case 1: return "As";
+            case 14: return "As";
             case 11: return "Valet";
             case 12: return "Dame";
             case 13: return "Roi";

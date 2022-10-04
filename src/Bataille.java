@@ -5,12 +5,11 @@ public class Bataille {
 
     public static void main(String[] args) {
 
-        String [] cardColor = {"Pique", "Coeur", "Carreau", "Trèfle"};
         ArrayList<Carte> cardList = new ArrayList<Carte>();
 
-        for(int i = 0; i < cardColor.length; i++) {
+        for(int i = 0; i < Carte.cardColor.length; i++) {
             for(int j = 1; j < 14; j++) {
-                cardList.add(new Carte(cardColor[i], j));
+                cardList.add(new Carte(Carte.cardColor[i], j));
             }
         }
         Collections.shuffle(cardList);
@@ -38,8 +37,6 @@ public class Bataille {
                 j2.addPoint();
                 System.out.println("Joueur 2 gagne la manche ! " + "(Joueur 1 joue " + c1.toString() + " | Joueur 2 joue " + c2.toString());
             } else {
-                //j1.addCard(c1);
-                //j2.addCard(c2);
                 bataille1.add(c1);
                 bataille2.add(c2);
                 bataille1.add(j1.playCard());
@@ -57,7 +54,6 @@ public class Bataille {
                     System.out.println("Joueur 2 gagne la manche ! " + "(Joueur 1 joue " + bataille1.get(bataille1.size()-1).toString() + " | Joueur 2 joue " + bataille2.get(bataille2.size()-1).toString());
                     j2.addAllCard(bataille1, bataille2);
                 }
-                //System.out.println("Egalité");
             }
         }
         if(j2.win()) {
