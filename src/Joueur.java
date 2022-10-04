@@ -22,6 +22,15 @@ public class Joueur {
         cardList.add(card);
     }
 
+    public void addAllCard(ArrayList<Carte> bataille1, ArrayList<Carte> bataille2) {
+        for(Carte carte: bataille1) {
+            cardList.add(carte);
+        }
+        for(Carte carte: bataille2) {
+            cardList.add(carte);
+        }
+    }
+
     public void addPoint() {
         points++;
     }
