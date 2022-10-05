@@ -3,7 +3,7 @@ import java.util.Objects;
 public class Carte implements Comparable {
 
     static final String [] cardColor = {"Pique", "Coeur", "Carreau", "Trèfle"};
-    private static final int [] cardValue = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+    static final int [] cardValue = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
     private final String color;
     private final int value;

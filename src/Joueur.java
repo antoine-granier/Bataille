@@ -35,8 +35,8 @@ public class Joueur {
         points++;
     }
 
-    public boolean win() {
-        return points == 20;
+    public boolean win(int maxPoint) {
+        return points == maxPoint ;
     }
 
     @Override

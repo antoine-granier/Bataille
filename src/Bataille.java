@@ -5,10 +5,11 @@ public class Bataille {
 
     public static void main(String[] args) {
 
+        int maxPoint = 20;
         ArrayList<Carte> cardList = new ArrayList<Carte>();
 
         for(int i = 0; i < Carte.cardColor.length; i++) {
-            for(int j = 1; j < 14; j++) {
+            for(int j = 2; j < 15; j++) {
                 cardList.add(new Carte(Carte.cardColor[i], j));
             }
         }
@@ -22,7 +23,7 @@ public class Bataille {
         Joueur j1 = new Joueur(list1);
         Joueur j2 = new Joueur(list2);
 
-        while(!j1.win() && !j2.win()) {
+        while(!j1.win(maxPoint) && !j2.win(maxPoint)) {
             Carte c1 = j1.playCard();
             Carte c2 = j2.playCard();
             int i = c1.compareTo(c2);
@@ -56,7 +57,7 @@ public class Bataille {
                 }
             }
         }
-        if(j2.win()) {
+        if(j2.win(maxPoint)) {
             System.out.println("Joueur 2 a gagné !\nj1 : " + j1.toString() + "\nj2 : " + j2.toString());
         } else {
             System.out.println("Joueur 1 a gagné !\nj1 : " + j1.toString() + "\nj2 : " + j2.toString());
