@@ -31,12 +31,12 @@ public class Bataille {
                 j1.addCard(c1);
                 j1.addCard(c2);
                 j1.addPoint();
-                System.out.println("Joueur 1 gagne la manche ! " + "(Joueur 1 joue " + c1.toString() + " | Joueur 2 joue " + c2.toString());
+                System.out.println("Joueur 1 gagne la manche ! " + "| (Joueur 1 joue " + c1.toString() + " | Joueur 2 joue " + c2.toString());
             } else if(i < 0) {
                 j2.addCard(c1);
                 j2.addCard(c2);
                 j2.addPoint();
-                System.out.println("Joueur 2 gagne la manche ! " + "(Joueur 1 joue " + c1.toString() + " | Joueur 2 joue " + c2.toString());
+                System.out.println("Joueur 2 gagne la manche ! " + "| (Joueur 1 joue " + c1.toString() + " | Joueur 2 joue " + c2.toString());
             } else {
                 bataille1.add(c1);
                 bataille2.add(c2);

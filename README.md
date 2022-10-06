@@ -35,3 +35,8 @@ En cas d'égalité des cartes, il y a bataille.
 
 Chaque joueur pioche une nouvelle carte et la joue jusqu'à qu'il y est un gagnant.
 Ce dernier récupèrera l'ensemble des cartes misent en jeu.
+
+
+##Détail
+
+Le fichier `umlBataille.uxf` peut être ouvert avec un logiciel tel que [UMLet](https://www.umlet.com/) ou utiliser `uml.png`.
